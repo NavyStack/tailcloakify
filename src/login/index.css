@@ -3,6 +3,7 @@
 ---------------------------------------------------- */
 @import "@fontsource/noto-sans-kr/korean.css";
 @import "@fontsource/noto-sans-kr/latin.css";
+@import "@fontsource/noto-sans-jp/japanese.css";
 
 @tailwind base;
 @tailwind components;

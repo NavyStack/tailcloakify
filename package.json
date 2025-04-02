@@ -1,10 +1,10 @@
 {
     "name": "tailcloakify",
-    "version": "2.0.1",
-    "description": "Tailcloakify, the Keycloak Theme based on Keycloakify, and layered with TailwindCSS",
+    "version": "2.0.2",
+    "description": "Tailcloakify, the Keycloak Theme based on Keycloakify, and layered with TailwindCSS (Korean)",
     "repository": {
         "type": "git",
-        "url": "git@github.com:AISFlow/tailcloakify.git"
+        "url": "git@github.com:navystack/tailcloakify.git"
     },
     "type": "module",
     "scripts": {
@@ -28,6 +28,7 @@
     "devDependencies": {
         "@chromatic-com/storybook": "^3.2.3",
         "@eslint/js": "^9.15.0",
+        "@fontsource/noto-sans-jp": "^5.2.5",
         "@fontsource/noto-sans-kr": "^5.2.5",
         "@storybook/react": "^8.4.7",
         "@storybook/react-vite": "^8.4.7",
