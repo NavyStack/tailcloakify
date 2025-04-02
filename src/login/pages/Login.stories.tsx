@@ -459,7 +459,7 @@ export const WithScriptsStylesAndMeta: Story = {
                 properties: {
                     scripts: "/invalid-script.js /another-invalid-script.js",
                     styles: "/invalid-styles.css /another-invalid-styles.css",
-                    meta: "test==content test2==content2",
+                    meta: "test==content test2==content2"
                 }
             }}
         />
@@ -478,10 +478,9 @@ export const WithDoTryAnotherWayOption: Story = {
             {...args}
             kcContext={{
                 auth: {
-                    showTryAnotherWayLink: true,
-                },
+                    showTryAnotherWayLink: true
+                }
             }}
         />
     )
 };
-

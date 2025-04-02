@@ -1,68 +1,106 @@
-/* Referenced from >>>>> https://tailwindcss.com/docs/guides/vite*/
+/* ----------------------------------------------------
+   Import Fonts and Tailwind Base
+---------------------------------------------------- */
+@import "@fontsource/noto-sans-kr/korean.css";
+@import "@fontsource/noto-sans-kr/latin.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body.kcBodyClass {
-    background: #ffffff;
+/* ----------------------------------------------------
+   Root Variables
+---------------------------------------------------- */
+:root {
+    --font-sans: "Noto Sans KR", -apple-system, "Pretendard Variable", Pretendard,
+        BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+        "Apple SD Gothic Neo", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", sans-serif;
 }
 
+/* ----------------------------------------------------
+   Global Styles
+---------------------------------------------------- */
 html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     -moz-tab-size: 4;
     tab-size: 4;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    font-family: var(--font-sans);
     font-feature-settings: normal;
-    font-variation-settings: normal
+    font-variation-settings: normal;
 }
 
+body.kcBodyClass {
+    background: #ffffff;
+}
+
+body,
+div {
+    font-family: var(--font-sans);
+    font-display: swap;
+}
+
+/* ----------------------------------------------------
+   Keycloak Form Card Style
+---------------------------------------------------- */
 .kcFormCardClass {
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
-    border-color: #e5e7eb;
+    border-color: #e5e7eb; /* Tailwind's gray-200 */
 }
 
+/* ----------------------------------------------------
+   Separator Style (used between elements)
+---------------------------------------------------- */
 .separate {
     display: flex;
     align-items: center;
-    text-align: center
+    text-align: center;
 }
 
-.separate:after,
-.separate:before {
+.separate:before,
+.separate:after {
     content: "";
     flex: 1 1 0%;
     border-bottom-width: 1px;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity)); /* gray-200 */
     --tw-border-opacity: 1;
-    border-color: rgb(229 231 235 / var(--tw-border-opacity))
-}
-
-.separate:not(:empty):after {
-    margin-left: .5rem
 }
 
 .separate:not(:empty):before {
-    margin-right: .5rem
+    margin-right: 0.5rem;
 }
 
+.separate:not(:empty):after {
+    margin-left: 0.5rem;
+}
+
+/* ----------------------------------------------------
+   Info Wrapper Section
+---------------------------------------------------- */
 #kc-info-wrapper {
     background: #ffffff;
     padding: 15px 0 0 0;
 }
 
-/* hidden */
+/* ----------------------------------------------------
+   Cookie Consent Animation Scaling
+---------------------------------------------------- */
+/* hidden state */
 #cc-main .cm.cm--box {
-    transform: scale(.96)!important;
+    transform: scale(0.96) !important;
 }
 
-/* visible */
-.show--consent #cc-main .cc--anim .cm.cm--box{
-    transform: scale(1)!important;
+/* visible state */
+.show--consent #cc-main .cc--anim .cm.cm--box {
+    transform: scale(1) !important;
 }
 
+/* ----------------------------------------------------
+   OTP Input Field
+---------------------------------------------------- */
 .otp-input {
     width: 45px;
     border: 3px solid gray;
@@ -78,6 +116,9 @@ html {
     outline: none;
 }
 
+/* ----------------------------------------------------
+   Locale Selector List
+---------------------------------------------------- */
 .kcLocaleListClass {
     max-height: 150px;
     overflow-y: scroll;

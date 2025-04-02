@@ -78,7 +78,7 @@ export const WithDoTryAnotherWayOption: Story = {
         <KcPageStory
             kcContext={{
                 auth: {
-                    showTryAnotherWayLink: true,
+                    showTryAnotherWayLink: true
                 },
                 url: {
                     loginAction: "/mock-login",

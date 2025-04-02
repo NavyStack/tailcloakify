@@ -84,7 +84,8 @@ export default function LoginPassword(props: PageProps<Extract<KcContext, { page
                                             tabIndex={5}
                                             href={url.loginResetCredentialsUrl}
                                             className={"text-primary-600 hover:text-primary-500 inline-flex no-underline hover:no-underline"}
-                                        ><br/>
+                                        >
+                                            <br />
                                             {msg("doForgotPassword")}
                                         </a>
                                     </span>

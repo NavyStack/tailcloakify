@@ -114,9 +114,15 @@ export default function P2MagicLinkOtpForm(
                 method="post"
             >
                 <div className={kcClsx("kcFormGroupClass")}>
-                    <div className={clsx(kcClsx("kcLabelWrapperClass"), "text-center font-bold text-lg p-4")}>
+                    <div
+                        className={clsx(
+                            kcClsx("kcLabelWrapperClass"),
+                            "text-center font-bold text-lg p-4"
+                        )}
+                    >
                         <label htmlFor="otp" className={kcClsx("kcLabelClass")}>
-                            {msg("p2incMagicLinkOtpFormTitle")}<br />
+                            {msg("p2incMagicLinkOtpFormTitle")}
+                            <br />
                             {msg("loginOtpOneTimeLabel")}
                         </label>
                     </div>
@@ -135,7 +141,9 @@ export default function P2MagicLinkOtpForm(
                                     inputMode="numeric"
                                     value={otpValues[index]}
                                     onChange={handleInput(index)}
-                                    ref={el => (inputRef.current[index] = el as HTMLInputElement)}
+                                    ref={el =>
+                                        (inputRef.current[index] = el as HTMLInputElement)
+                                    }
                                     onKeyDown={handleKeyUp(index)}
                                     onPaste={handlePaste}
                                 />

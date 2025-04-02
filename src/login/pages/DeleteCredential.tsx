@@ -38,7 +38,9 @@ export default function DeleteCredential(props: PageProps<Extract<KcContext, { p
                     value={msgStr("doAccept")}
                 />
                 <input
-                    className={"rounded-md bg-secondary-600 text-white focus:ring-secondary-600 hover:bg-secondary-700 px-4 py-2 text-sm max-w-md focus:outline-none focus:ring-2 focus:ring-offset-2"}
+                    className={
+                        "rounded-md bg-secondary-600 text-white focus:ring-secondary-600 hover:bg-secondary-700 px-4 py-2 text-sm max-w-md focus:outline-none focus:ring-2 focus:ring-offset-2"
+                    }
                     name="cancel-aia"
                     id="kc-decline"
                     type="submit"

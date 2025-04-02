@@ -5,8 +5,8 @@
 </p>
 <img src="./public/Tailcloakify-login-page.png" alt="keycloak theme config" width="1905">
 
-Tailcloakify is a [Keycloak](https://github.com/keycloak/keycloak) Theme that is based on 
-[Keycloakify](https://github.com/keycloakify/keycloakify), layered with [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) and inspired by [Keywind](https://github.com/lukin/keywind) 
+Tailcloakify is a [Keycloak](https://github.com/keycloak/keycloak) Theme that is based on
+[Keycloakify](https://github.com/keycloakify/keycloakify), layered with [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) and inspired by [Keywind](https://github.com/lukin/keywind)
 UI design approach.
 
 # How to Use
@@ -15,9 +15,9 @@ UI design approach.
 2. Set environment variables or localization messages to customize the theme with the out of the box configuration functionalities.
 3. Restart your Keycloak server or deploy your builded docker image to your server.
 4. Log in to the Keycloak Admin Console.  
-Go to Realm Settings > Themes.  
-Select the Tailcloakify login theme from the dropdown.  
-Save your settings.
+   Go to Realm Settings > Themes.  
+   Select the Tailcloakify login theme from the dropdown.  
+   Save your settings.
 
 # Supported Pages
 
@@ -25,8 +25,8 @@ Tailcloakify aims to provide support for all default login pages, which are curr
 
 We also support using the following plugins:
 
-- [X] [apple-identity-provider](https://github.com/klausbetz/apple-identity-provider-keycloak)
-- [X] [keycloak-magic-link](https://github.com/p2-inc/keycloak-magic-link)
+-   [x] [apple-identity-provider](https://github.com/klausbetz/apple-identity-provider-keycloak)
+-   [x] [keycloak-magic-link](https://github.com/p2-inc/keycloak-magic-link)
 
 ## Customizing the Theme
 
@@ -34,30 +34,30 @@ Tailcloakify provides several ways of customizing your theme without the need to
 
 ## Environment variables
 
-| Name                                        | Description                                                                  |
-| ------------------------------------------- |------------------------------------------------------------------------------|
-| TAILCLOAKIFY_ADDITIONAL_SCRIPTS             | Use it to add other external scripts                                         |
-| TAILCLOAKIFY_ADDITIONAL_STYLES              | Use it to add other external styles                                          |
-| TAILCLOAKIFY_ADDITIONAL_META                | Use it to add other meta tags                                                |
-| TAILCLOAKIFY_BACKGROUND_LOGO_URL            | Use it to add an image of your logo                                          |
-| TAILCLOAKIFY_BACKGROUND_VIDEO_URL           | Use it to add a MP4 format background video on your register and login pages |
-| TAILCLOAKIFY_FAVICON_URL                    | Use it to add a url to your Favicon                                          |
-| TAILCLOAKIFY_FOOTER_IMPRINT_URL             | Use it to add an Impressum                                                   |
-| TAILCLOAKIFY_FOOTER_DATAPROTECTION_URL      | Use it to add url to your data protection document                           |
-| TAILCLOAKIFY_FOOTER_ORESTBIDACOOKIECONSENT  | Use it to integrate Orestbida cookie consent plugin                          |
-| TAILCLOAKIFY_FOOTER_ORESTBIDACOOKIECONSENT_GOOGLE_CAPTCHA  | Provide any falsy value to disable the cookie section for the google captcha                          |
+| Name                                                      | Description                                                                  |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| TAILCLOAKIFY_ADDITIONAL_SCRIPTS                           | Use it to add other external scripts                                         |
+| TAILCLOAKIFY_ADDITIONAL_STYLES                            | Use it to add other external styles                                          |
+| TAILCLOAKIFY_ADDITIONAL_META                              | Use it to add other meta tags                                                |
+| TAILCLOAKIFY_BACKGROUND_LOGO_URL                          | Use it to add an image of your logo                                          |
+| TAILCLOAKIFY_BACKGROUND_VIDEO_URL                         | Use it to add a MP4 format background video on your register and login pages |
+| TAILCLOAKIFY_FAVICON_URL                                  | Use it to add a url to your Favicon                                          |
+| TAILCLOAKIFY_FOOTER_IMPRINT_URL                           | Use it to add an Impressum                                                   |
+| TAILCLOAKIFY_FOOTER_DATAPROTECTION_URL                    | Use it to add url to your data protection document                           |
+| TAILCLOAKIFY_FOOTER_ORESTBIDACOOKIECONSENT                | Use it to integrate Orestbida cookie consent plugin                          |
+| TAILCLOAKIFY_FOOTER_ORESTBIDACOOKIECONSENT_GOOGLE_CAPTCHA | Provide any falsy value to disable the cookie section for the google captcha |
 
 ## Keycloak localization feature
 
 Some customizations are possible through Keycloak's Localization System, allowing setting up different configurations for each language. You can either add custom localization by adding those into the keycloak server or by manually setting them within the realm settings.
 
-| Name                     | Description                                                                        |
-| ------------------------ | ---------------------------------------------------------------------------------- |
-| backgroundLogoUrl        | The localized enabled alternative to env: TAILCLOAKIFY_BACKGROUND_LOGO_URL         |
-| backgroundVideoUrl       | The localized enabled alternative to env: TAILCLOAKIFY_BACKGROUND_VIDEO_URL        |
-| faviconUrl               | The localized enabled alternative to env: TAILCLOAKIFY_FAVICON_URL                 |
-| footerImprintUrl         | The localized enabled alternative to env: TAILCLOAKIFY_FOOTER_IMPRINT_URL          |
-| footerDataprotectionUrl  | The localized enabled alternative to env: TAILCLOAKIFY_FOOTER_DATAPROTECTION_URL   |
+| Name                    | Description                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------- |
+| backgroundLogoUrl       | The localized enabled alternative to env: TAILCLOAKIFY_BACKGROUND_LOGO_URL       |
+| backgroundVideoUrl      | The localized enabled alternative to env: TAILCLOAKIFY_BACKGROUND_VIDEO_URL      |
+| faviconUrl              | The localized enabled alternative to env: TAILCLOAKIFY_FAVICON_URL               |
+| footerImprintUrl        | The localized enabled alternative to env: TAILCLOAKIFY_FOOTER_IMPRINT_URL        |
+| footerDataprotectionUrl | The localized enabled alternative to env: TAILCLOAKIFY_FOOTER_DATAPROTECTION_URL |
 
 ## Using a child Theme
 
@@ -109,15 +109,15 @@ Or you can preview the pages using the storybook:
 You need to have [Maven](https://maven.apache.org/) installed to build the theme (Maven >= 3.1.1, Java >= 7).  
 The `mvn` command must be in the $PATH.
 
-- On macOS: `brew install maven`
-- On Debian/Ubuntu: `sudo apt-get install maven`
-- On Windows: `choco install openjdk` and `choco install maven` (Or download from [here](https://maven.apache.org/download.cgi))
+-   On macOS: `brew install maven`
+-   On Debian/Ubuntu: `sudo apt-get install maven`
+-   On Windows: `choco install openjdk` and `choco install maven` (Or download from [here](https://maven.apache.org/download.cgi))
 
 ```bash
   npm run build-keycloak-theme
 ```
 
-Note that by default Keycloakify generates multiple `.jar` files for different versions of Keycloak.  
+Note that by default Keycloakify generates multiple `.jar` files for different versions of Keycloak.
 
 ## GitHub Actions
 

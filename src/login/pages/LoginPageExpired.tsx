@@ -30,7 +30,8 @@ export default function LoginPageExpired(
                 >
                     {msg("doClickHere")}
                 </a>
-                <br /><br/>
+                <br />
+                <br />
                 {msg("pageExpiredMsg2")}{" "}
                 <a
                     id="loginContinueLink"
