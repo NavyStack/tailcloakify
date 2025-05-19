@@ -1,10 +1,10 @@
 # Use Keycloak Container
-FROM quay.io/keycloak/keycloak:26.1.4 as builder
+FROM quay.io/keycloak/keycloak:26.2.3 as builder
 
 # Install custom theme
 ADD --chown=keycloak:keycloak https://github.com/NavyStack/tailcloakify/releases/download/v2.0.2/keycloak-theme-for-kc-all-other-versions.jar /opt/keycloak/providers/keycloak-theme-for-kc-all-other-versions.jar
 
-FROM quay.io/keycloak/keycloak:26.1.4
+FROM quay.io/keycloak/keycloak:26.2.3
 
 COPY --from=builder /opt/keycloak /opt/keycloak
 WORKDIR /opt/keycloak

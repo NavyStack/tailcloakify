@@ -37,6 +37,15 @@ export type KcContextExtensionPerPage = {
             attemptedUsername: string;
         };
     };
+    // 👉 P2-INC => Orgs Extension
+    "invitations.ftl": {
+        invitations: {
+            orgs: {
+                id: string;
+                displayName: string;
+            }[];
+        };
+    };
 };
 
 export type KcContext = ExtendKcContext<KcContextExtension, KcContextExtensionPerPage>;
