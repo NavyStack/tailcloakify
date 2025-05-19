@@ -39,6 +39,12 @@ const kcContextExtensionPerPage: KcContextExtensionPerPage = {
         auth: {
             attemptedUsername: "user@user.com"
         }
+    },
+    // 👉 P2-INC => Orgs Extension
+    "invitations.ftl": {
+        invitations: {
+            orgs: [{ id: "test", displayName: "test" }]
+        }
     }
 };
 
